@@ -31,6 +31,10 @@ sudo apt-get install -y rlwrap
 # https://toolbelt.heroku.com/debian
 wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 
+# Install rsub for remote file editing with Sublime Text
+sudo wget -O /usr/local/bin/rsub https://raw.github.com/aurora/rmate/master/rmate
+sudo chmod +x /usr/local/bin/rsub
+
 # git pull and install dotfiles as well
 cd $HOME
 if [ -d ./dotfiles/ ]; then
